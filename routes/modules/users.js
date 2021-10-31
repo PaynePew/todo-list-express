@@ -38,10 +38,8 @@ router.post("/register", (req, res) => {
         email,
         password,
       })
-
         .then(() => res.redirect("/"))
         .catch((err) => console.log(err));
-
       // const newUser = new User({
       //   name,
       //   email,
@@ -53,6 +51,11 @@ router.post("/register", (req, res) => {
       //   .catch((err) => console.log(err));
     }
   });
+});
+
+router.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/users/login");
 });
 
 module.exports = router;
