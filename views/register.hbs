@@ -2,6 +2,7 @@
   <div class="col-md-6 m-auto">
     <div class="card card-body">
       <h1 class="text-center mt-3">Register</h1>
+      {{> message}}
       <form action="" method="POST">
         <div class="form-group">
           <label for="name">Name</label>
@@ -37,13 +38,13 @@
           />
         </div>
         <div class="form-group">
-          <label for="comfirmPassword">Confirm Password</label>
+          <label for="confirmPassword">Confirm Password</label>
           <input
-            type="comfirmPassword"
-            id="comfirmPassword"
-            name="comfirmPassword"
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
             class="form-control"
-            placeholder="Enter Password"
+            placeholder="Confirm Password"
             value="{{confirmPassword}}"
           />
         </div>
